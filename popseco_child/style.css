@@ -29,6 +29,46 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 }
 
 .pris {
-    font-size: 1ßvw;
+    font-size: 1vw;
     text-align: center;
+}
+
+.overskrift {
+    text-align: center;
+    margin: 5vw 0 7vw 0;
+}
+
+#filtrering {
+    margin-left: auto;
+    margin-right: auto;
+    width: 47%;
+
+}
+
+.filter {
+    margin-left: 2vw;
+    padding: 1vw 2vw;
+    margin-bottom: 4vw;
+}
+
+button {
+    background-color: white;
+}
+
+button:hover {
+    background-color: #EEDECC;
+}
+
+#first_section .section_wrapper .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+#second_section .section_wrapper .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
 }

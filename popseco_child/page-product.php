@@ -15,7 +15,7 @@ get_header();
 
         <head>
         </head>
-        <h1>THE FREEZERS</h1>
+        <h1 class="overskrift">THE FREEZERS</h1>
         <template>
             <article>
                 <img src="" alt="" class="billede">
@@ -27,10 +27,47 @@ get_header();
         <section id="primary" class="content-area">
             <main id="main" class="site-main">
                 <nav id="filtrering">
-                    <button data-is="alle">alle</button>
+                    <button class="filter" data-is="alle">alle</button>
                 </nav>
                 <section class="iscontainer"></section>
+
+                <section id="first_section">
+                    <h1 class="overskrift">OUR SELECTION</h1>
+                    <div class="section_wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <img src="billeder/is.png" alt="is">
+                            </div>
+                            <div class="col">
+                                <h2 class="overskriftto">Get a mixed box</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis amet blanditiis saepe laborum, dolorum! Fuga excepturi odio officiis quia iusto, voluptatem tempora cum, non repellendus ipsam tempore odit ex.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="second_section">
+                    <div class="section_wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <img src="billeder/is.png" alt="ikke det rigtige billede">
+                            </div>
+                            <div class="col">
+                                <img src="billeder/is.png" alt="ikke det rigtige billede ">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="billeder/is.png" alt="ikke det rigtige billede">
+                        </div>
+                    </div>
+
+                </section>
+
+
             </main>
+
+
+
             <script>
                 let isene;
                 let categories;
