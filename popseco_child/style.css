@@ -11,3 +11,24 @@ License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    neve
 Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready, wide-blocks, block-styles
 */
+
+/*DETTE ER TIL PAGE-PRODUCT*/
+/*Dette er en kode til at lave grid opsætning, som justeres alt efter hvilken divejses der bruges. samt centrer produkterne på midten af siden. */
+.iscontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+}
+
+.isensnavn {
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.pris {
+    font-size: 1ßvw;
+    text-align: center;
+}
