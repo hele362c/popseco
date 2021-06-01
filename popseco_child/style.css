@@ -12,11 +12,40 @@ Text Domain:    neve
 Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready, wide-blocks, block-styles
 */
 
-/*DETTE ER TIL PAGE-PRODUCT*/
-/*Dette er en kode til at lave grid opsætning, som justeres alt efter hvilken divejses der bruges. samt centrer produkterne på midten af siden. */
+/*------------DETTE ER TIL PAGE-PRODUCT-------------*/
+/*Mobil version */
+.overskriftto {
+    margin-top: 10vw;
+}
+
+/*Dette er en kode som sørger for at filter knapperne er centreret på midten af siden.*/
+#filtrering {
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+}
+
+/*Dette er kode til at give filter knapprne noget styling i form af margin og padding.*/
+.filter {
+    margin-left: 2vw;
+    padding: 1vw 2vw;
+    margin-bottom: 4vw;
+}
+
+/*Dette er en kode som ændre på farverne på filtreringsknapperne (knapper genrelt) */
+button {
+    background-color: white;
+}
+
+/*Dette er en kode som giver knapperne en hover effekt som er at skifte til en anden farve */
+button:hover {
+    background-color: #EEDECC;
+}
+
+/*Dette er en kode til at lave grid opsætning på produkterne, som justeres alt efter hvilken divejses der bruges. samt centrer produkterne på midten af siden. */
 .iscontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 3vw;
     margin-left: auto;
     margin-right: auto;
@@ -24,12 +53,12 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 }
 
 .isensnavn {
-    font-size: 1.1vw;
+    font-size: 2.1vw;
     text-align: center;
 }
 
 .pris {
-    font-size: 1vw;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -38,37 +67,112 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
     margin: 5vw 0 7vw 0;
 }
 
-#filtrering {
-    margin-left: auto;
-    margin-right: auto;
-    width: 47%;
-
-}
-
-.filter {
-    margin-left: 2vw;
-    padding: 1vw 2vw;
-    margin-bottom: 4vw;
-}
-
-button {
-    background-color: white;
-}
-
-button:hover {
-    background-color: #EEDECC;
-}
-
+/*Her er firste_section opsat i et grid som i mobil version ligger under hinanden - det som kommer efter "our selection" overskriften */
 #first_section .section_wrapper .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     column-gap: 10px;
 }
 
-#second_section .section_wrapper .row {
+#second_section {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+/*-------------DETTE ER TIL SINGLE-IS--------------*/
+#sektion_02 .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     column-gap: 10px;
+}
+
+#sektion_03 .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+.is_article {
+    margin-top: 3vw;
+}
+
+.valgt {
+    margin-top: 3vw;
+}
+
+#sektion_02 {
+    margin-top: 10vw;
+}
+
+.single-billede {
+    height: 40%;
+    margin-left: 8vw;
+}
+
+#sektion_03 {
+    margin-top: -60vw;
+    margin-bottom: 10vw;
+}
+
+/*tablet*/
+@media (min-width:760px) {
+    #filtrering {
+        width: 44%;
+    }
+
+    .isensnavn {
+        font-size: 1.5vw;
+    }
+
+    .pris {
+        font-size: 2vw;
+    }
+
+    /*Her er firste_section opsat i et grid som i tablet version ligger ved siden af hinanden - det som kommer efter "our selection" overskriften */
+    #first_section .section_wrapper .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Her er second_section som er det sidste på produkt siden (de tre billeder) de er opsat i et grid som i tablet version ligger  hinanden og et neden under. */
+    #second_section .section_wrapper .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+    }
+
+    /*-------------DETTE ER TIL SINGLE-IS--------------*/
+    #sektion_02 .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #sektion_03 .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/*website*/
+@media (min-width: 1020px) {
+
+    /*Her forstørres størelsen på prpdukt billederne på desktop versionen. */
+    .iscontainer {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        width: 64%;
+    }
+
+    .isensnavn {
+        font-size: 1.1vw;
+    }
+
+    .pris {
+        font-size: 1vw;
+    }
+
+    #filtrering {
+        width: 47%;
+    }
 }

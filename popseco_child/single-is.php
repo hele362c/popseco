@@ -20,16 +20,39 @@ get_header();
                 <div id="tilbage_knap">
                     <button class="valgt">Tilbage</button>
                 </div>
+
                 <article class="is_article">
-                    <img src="" alt="" class="billede">
-                    <div class="text_div2">
-                        <h2 class="navn"></h2>
-                        <h2 class="prissen"></h2>
-                        <p class="beskrivelse"></p>
-                    </div>
+                    <h2 class="navn"></h2>
+                    <p class="kortbeskrivelse"></p>
+
+
+                    <section id="sektion_02">
+                        <div class="row">
+                            <div class="col">
+                                <img src="" alt="" class="single-billede">
+                            </div>
+                            <div class="col">
+                                <h2>Something ...</h2>
+                                <p class="beskrivelse"></p>
+                                <h3 class="prissen"></h3>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="sektion_03">
+                        <div class="row">
+                            <div class="col">
+                                <img src="" alt="" class="billede01">
+                            </div>
+                            <div class="col">
+                                <img src="" alt="" class="billede02">
+                            </div>
+                        </div>
+                    </section>
+
                 </article>
             </main>
-
             <script>
                 let pod;
 
@@ -46,8 +69,11 @@ get_header();
                 function visIs() {
                     console.log(is.billede.guid);
                     document.querySelector(".navn").textContent = is.title.rendered;
-                    document.querySelector(".billede").src = is.billede.guid;
+                    document.querySelector(".single-billede").src = is.billede.guid;
+                    document.querySelector(".billede01").src = is.billede01.guid;
+                    document.querySelector(".billede02").src = is.billede02.guid;
                     document.querySelector(".beskrivelse").textContent = is.beskrivelse;
+                    document.querySelector(".kortbeskrivelse").textContent = is.kortbeskrivelse;
                     document.querySelector(".prissen").innerHTML = is.pris;
                     document.querySelector(".valgt").addEventListener("click", tilbageTilMenu);
                 }

@@ -27,7 +27,7 @@ get_header();
         <section id="primary" class="content-area">
             <main id="main" class="site-main">
                 <nav id="filtrering">
-                    <button class="filter" data-is="alle">alle</button>
+                    <button class="filter" data-is="alle">all</button>
                 </nav>
                 <section class="iscontainer"></section>
 
@@ -36,7 +36,7 @@ get_header();
                     <div class="section_wrapper">
                         <div class="row">
                             <div class="col">
-                                <img src="billeder/is.png" alt="is">
+                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/is.png" alt="is">
                             </div>
                             <div class="col">
                                 <h2 class="overskriftto">Get a mixed box</h2>
@@ -50,14 +50,14 @@ get_header();
                     <div class="section_wrapper">
                         <div class="row">
                             <div class="col">
-                                <img src="billeder/is.png" alt="ikke det rigtige billede">
+                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/image01.png" alt="ikke det rigtige billede">
                             </div>
                             <div class="col">
-                                <img src="billeder/is.png" alt="ikke det rigtige billede ">
+                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/image2.png" alt="ikke det rigtige billede ">
                             </div>
                         </div>
                         <div class="row">
-                            <img src="billeder/is.png" alt="ikke det rigtige billede">
+                            <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/image3.png" alt="ikke det rigtige billede">
                         </div>
                     </div>
 
