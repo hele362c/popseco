@@ -41,6 +41,7 @@ get_header();
                             <div class="col">
                                 <h2 class="overskriftto">Get a mixed box</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis amet blanditiis saepe laborum, dolorum! Fuga excepturi odio officiis quia iusto, voluptatem tempora cum, non repellendus ipsam tempore odit ex.</p>
+                                <button class="buynow_mixbox">Buy now</button>
                             </div>
                         </div>
                     </div>

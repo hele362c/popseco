@@ -28,7 +28,7 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 /*Dette er kode til at give filter knapprne noget styling i form af margin og padding.*/
 .filter {
     margin-left: 2vw;
-    padding: 1vw 2vw;
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
     margin-bottom: 4vw;
 }
 
@@ -117,6 +117,18 @@ button:hover {
     margin-bottom: 10vw;
 }
 
+.sektion_02_h2 {
+    margin-top: 9vw;
+}
+
+.buynow {
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+}
+
+.buynow_mixbox {
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+}
+
 /*tablet*/
 @media (min-width:760px) {
     #filtrering {
@@ -152,7 +164,6 @@ button:hover {
     #sektion_03 .row {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 /*website*/
@@ -173,6 +184,6 @@ button:hover {
     }
 
     #filtrering {
-        width: 47%;
+        width: 43%;
     }
 }
