@@ -31,12 +31,11 @@ get_header();
                             <div class="col">
                                 <img src="" alt="" class="single-billede">
                             </div>
-                            <div class="col_02">
+                            <div class="col">
                                 <h2 class="sektion_02_h2">Something ...</h2>
                                 <p class="beskrivelse"></p>
                                 <h3 class="prissen"></h3>
                                 <button class="buynow">Buy now</button>
-
                             </div>
                         </div>
                     </section>
