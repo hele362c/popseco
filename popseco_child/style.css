@@ -35,7 +35,7 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 /*Dette er en kode som ændre på farverne på filtreringsknapperne (knapper genrelt) */
 button {
     background-color: #EEDECC;
-    color: white;
+    color: black;
 }
 
 /*Dette er en kode som giver knapperne en hover effekt som er at skifte til en anden farve */
@@ -82,13 +82,18 @@ button:hover {
     margin-bottom: 10vw;
 }
 
+.section_wrapper {
+    margin-bottom: 10vw;
+}
+
 /*-------------DETTE ER TIL SINGLE-IS--------------*/
 #sektion_02 .row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     column-gap: 10px;
 }
+
 
 #sektion_03 .row {
     display: grid;
@@ -114,9 +119,11 @@ button:hover {
     margin-left: 8vw;
 }
 
+
 #sektion_03 {
     margin-bottom: 10vw;
 }
+
 
 .sektion_02_h2 {
     margin-top: -200vw;
@@ -157,42 +164,91 @@ button:hover {
         column-gap: 10px;
     }
 
+    .filter {
+        padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    }
+
     /*-------------DETTE ER TIL SINGLE-IS--------------*/
     #sektion_02 .row {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
+
     #sektion_03 .row {
         grid-template-columns: 1fr 1fr;
     }
 
+
     .sektion_02_h2 {
         margin-top: 9vw;
     }
+}
 
-    .filter {
-        padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+/*website*/
+@media (min-width: 1020px) {
+
+    /*Her forstørres størelsen på prpdukt billederne på desktop versionen. */
+    .iscontainer {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        width: 64%;
     }
 
-    /*website*/
-    @media (min-width: 1020px) {
-
-        /*Her forstørres størelsen på prpdukt billederne på desktop versionen. */
-        .iscontainer {
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            width: 64%;
-        }
-
-        .isensnavn {
-            font-size: 1.1vw;
-        }
-
-        .pris {
-            font-size: 1vw;
-        }
-
-        #filtrering {
-            width: 43%;
-        }
+    .isensnavn {
+        font-size: 1.1vw;
     }
+
+    .pris {
+        font-size: 1vw;
+    }
+
+    #filtrering {
+        width: 43%;
+    }
+
+    .image {
+        position: relative;
+    }
+
+    .billede {
+        display: block;
+        box-shadow: 4px 4px 7px 2px;
+        color: #96887180;
+    }
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.74);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .overlay:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .overlay:hover > * {
+        transform: translateY(0px);
+    }
+
+
+    /*-------------DETTE ER TIL SINGLE-IS--------------*/
+    #sektion_02 .row {
+        grid-template-columns: 1fr 2fr;
+    }
+}

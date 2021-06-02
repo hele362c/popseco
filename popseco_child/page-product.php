@@ -18,9 +18,14 @@ get_header();
         <h1 class="overskrift">THE FREEZERS</h1>
         <template>
             <article>
-                <img src="" alt="" class="billede">
-                <h2 class="isensnavn"></h2>
-                <h3 class="pris"></h3>
+                <div class="image">
+                    <img src="" alt="" class="billede">
+                    <div class="overlay">
+                        <h2 class="isensnavn"></h2>
+                        <h3 class="pris"></h3>
+                    </div>
+                </div>
+
             </article>
         </template>
 
@@ -47,6 +52,7 @@ get_header();
                     </div>
                 </section>
 
+                <!--
                 <section id="second_section">
                     <div class="section_wrapper">
                         <div class="row">
@@ -63,6 +69,7 @@ get_header();
                     </div>
 
                 </section>
+-->
 
 
             </main>
