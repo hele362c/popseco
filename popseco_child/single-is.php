@@ -32,7 +32,7 @@ get_header();
                                 <img src="" alt="" class="single-billede">
                             </div>
                             <div class="col">
-                                <h2 class="sektion_02_h2">Something ...</h2>
+                                <h2 class="sektion_02_h2">A taste of summer</h2>
                                 <p class="beskrivelse"></p>
                                 <h3 class="prissen"></h3>
                                 <button class="buynow">Buy now</button>

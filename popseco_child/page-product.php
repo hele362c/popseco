@@ -41,11 +41,18 @@ get_header();
                     <div class="section_wrapper">
                         <div class="row">
                             <div class="col">
-                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/is.png" alt="is">
+                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/is.png" alt="vegan ice cream">
                             </div>
                             <div class="col">
                                 <h2 class="overskriftto">Get a mixed box</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis amet blanditiis saepe laborum, dolorum! Fuga excepturi odio officiis quia iusto, voluptatem tempora cum, non repellendus ipsam tempore odit ex.</p>
+                                <p>Buy a pack of 10 organic freezer pops then there is a taste for everyone and one each. The package consists of</p>
+                                <ul>
+                                    <li> 4 x Strawberry / Elderflower</li>
+                                    <li> 2 x Apple / Ginger</li>
+                                    <li> 2 x Blackcurrant / Vanilla</li>
+                                    <li> 2 x Passion fruit</li>
+                                </ul>
+                                <h3 class="box_pris">50 kr.</h3>
                                 <button class="buynow_mixbox">Buy now</button>
                             </div>
                         </div>
