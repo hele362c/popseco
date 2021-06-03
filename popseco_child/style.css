@@ -259,10 +259,14 @@ button:hover {
         width: 43%;
     }
 
+    /*starten på - image - tekst hover effects*/
+
+    /*sørger for at billederne (produkterne) er placeret i forhold til sin normale position*/
     .image {
         position: relative;
     }
 
+    /*tilføjer noget luft oppe og neden på .billede (produkterne) samt sørger der ikke er andet som ligger sig ved siden af */
     .billede {
         display: block;
         box-shadow: 4px 4px 7px 2px;
@@ -270,35 +274,44 @@ button:hover {
     }
 
     .overlay {
+        /* Arbejder sammen med linje 265-266 sørger for at det ønskede overlay kommer ved mouseover på produkterne*/
         position: absolute;
         left: 0;
         top: 0;
+        /* sørger for at at overlayet passer 100 % procent i bredden og højden*/
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.74);
         color: #ffffff;
+        /*sørger for at teksten (isens navn og pris er placeret under hinanden samt centrer teksten*/
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        /*sørger for at vi skjuler overlay ind til der kommer mouseover. */
         opacity: 0;
         transition: opacity 0.25s;
     }
 
+    /*sørger for at teksten kommer nede fra og på ved hover */
     .overlay > * {
         transform: translateY(20px);
         transition: transform 0.25s;
     }
 
+    /*sørger for at overlay bliver synligt når der er kommer en mouseover*/
     .overlay:hover {
         opacity: 1;
         cursor: pointer;
     }
 
+    /*sørger for at af animation/transitsen kommer ned fra 0 udgangspunkt*/
     .overlay:hover > * {
         transform: translateY(0px);
     }
 
+    ´
 
     /*-------------DETTE ER TIL SINGLE-IS--------------*/
     #sektion_02 .row {
