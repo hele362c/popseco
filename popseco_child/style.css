@@ -33,25 +33,26 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 }
 
 .box_pris {
-    margin-top: 1vw;
+    margin-top: 1%;
 }
 
 .overskriftto {
-    margin-top: 10vw;
+    margin-top: 10%;
 }
 
 /*Dette er en kode som sørger for at filter knapperne er centreret på midten af siden.*/
 #filtrering {
     margin-left: auto;
     margin-right: auto;
-    width: 56%;
+    width: 63%;
+    margin-bottom: 2%;
 }
 
 /*Dette er kode til at give filter knapprne noget styling i form af margin og padding.*/
 .filter {
-    margin-left: 2vw;
-    padding: 0.7vw 1.5vw 0.7vw 1.5vw;
-    margin-bottom: 4vw;
+    margin-left: 3%;
+    padding: 1.7% 4.5%;
+    margin-bottom: 4%;
 }
 
 /*Dette er en kode som ændre på farverne på filtreringsknapperne (knapper genrelt) */
@@ -64,31 +65,32 @@ button {
 button:hover {
     background-color: white;
     color: black;
+    border-color: #EEDECC;
 }
 
 /*Dette er en kode til at lave grid opsætning på produkterne, som justeres alt efter hvilken divejses der bruges. samt centrer produkterne på midten af siden. */
 .iscontainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 3vw;
+    grid-gap: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 64%;
 }
 
 .isensnavn {
-    font-size: 2.1vw;
+    font-size: 1rem;
     text-align: center;
 }
 
 .pris {
-    font-size: 3vw;
+    font-size: 0.9rem;
     text-align: center;
 }
 
 .overskrift {
     text-align: center;
-    margin: 5vw 0 7vw 0;
+    margin: 5% 0;
 }
 
 /*Her er firste_section opsat i et grid som i mobil version ligger under hinanden - det som kommer efter "our selection" overskriften */
@@ -100,22 +102,22 @@ button:hover {
 }
 
 #second_section {
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .section_wrapper {
-    margin-bottom: 10vw;
+    margin-bottom: 10%;
 }
 
 .buynow_mixbox {
-    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
-    margin-top: 1vw;
+    padding: 1.5% 2.5%;
+    margin-top: 1%;
 }
 
 /*-------------DETTE ER TIL SINGLE-IS--------------*/
-/*-------------første sektion--------------*/
-
+/*-------------anden sektion--------------*/
+/*opsætning af grid på single-view siden af anden sektion som består af et billede af isen og tekst*/
 #sektion_02 .row {
     display: grid;
     grid-template-columns: 1fr;
@@ -124,21 +126,25 @@ button:hover {
 }
 
 #sektion_02 {
-    margin-top: 10vw;
+    margin-top: 10%;
 }
 
 .single-billede {
-    margin-left: 8vw;
+    margin-left: 8%;
     width: 25%;
     display: block;
     margin: 0 auto;
+    /*tilføjelse af skygge på billede*/
+    box-shadow: 4px 4px 7px 2px;
+    color: #96887180;
 }
 
 .sektion_02_h2 {
     margin-top: 10%;
 }
 
-/*-------------anden sektion--------------*/
+/*-------------tredje sektion--------------*/
+/*opsætning af grid på single-view siden af tredje sektion som består af to billeder i bunden. */
 #sektion_03 .row {
     display: grid;
     grid-template-columns: 1fr;
@@ -160,26 +166,30 @@ button:hover {
 }
 
 .valgt {
-    margin-top: 3vw;
+    margin-top: 3%;
 }
 
 .buynow {
-    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    padding: 1.5% 2.5%;
 }
 
 
 /*tablet*/
 @media (min-width:760px) {
+    .iscontainer {
+        width: 48%;
+    }
+
     #filtrering {
         width: 44%;
     }
 
     .isensnavn {
-        font-size: 1.5vw;
+        font-size: 0.9rem;
     }
 
     .pris {
-        font-size: 2vw;
+        font-size: 0.9rem;
     }
 
     /*Her er firste_section opsat i et grid som i tablet version ligger ved siden af hinanden - det som kommer efter "our selection" overskriften */
@@ -196,27 +206,33 @@ button:hover {
     }
 
     .filter {
-        padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+        padding: 2.5% 4.5%;
     }
 
     /*-------------DETTE ER TIL SINGLE-IS--------------*/
-    /*-------------Første sektion--------------*/
+    /*-------------Anden sektion--------------*/
+    /*Her opsættest grid til to colunner*/
     #sektion_02 .row {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
     .sektion_02_h2 {
-        margin-top: 9vw;
+        margin-top: 9%;
     }
 
     .single-billede {
         width: 57%;
     }
 
-    /*-------------Anden sektion--------------*/
+    /*-------------Tredje sektion--------------*/
+    /*Her opsættest grid til to colunner*/
     #sektion_03 .row {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .billede02 {
+        margin-top: 0;
     }
 
 }
@@ -231,13 +247,14 @@ button:hover {
     }
 
     .isensnavn {
-        font-size: 1.1vw;
+        font-size: 1.1rem;
     }
 
     .pris {
-        font-size: 1vw;
+        font-size: 1rem;
     }
 
+    /*Sørger for at filtreringsbaren er placeret i midten.*/
     #filtrering {
         width: 43%;
     }
@@ -290,7 +307,9 @@ button:hover {
 }
 
 @media (min-width: 1020px) {
+
+    /*Sørger for at filtreringsbaren er placeret i midten.*/
     #filtrering {
-        width: 47%;
+        width: 30%;
     }
 }

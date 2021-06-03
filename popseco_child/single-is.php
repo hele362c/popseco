@@ -54,6 +54,8 @@ get_header();
 
                 </article>
             </main>
+
+
             <script>
                 let pod;
 
@@ -76,13 +78,13 @@ get_header();
                     document.querySelector(".beskrivelse").textContent = is.beskrivelse;
                     document.querySelector(".kortbeskrivelse").textContent = is.kortbeskrivelse;
                     document.querySelector(".prissen").innerHTML = is.pris;
+                    //                    Dette gør sørger for at nå vi klikker på tilbage knappen kommer vi tilbage til page-product
                     document.querySelector(".valgt").addEventListener("click", tilbageTilMenu);
                 }
 
                 function tilbageTilMenu() {
                     console.log("tilbageTilMenu");
                     history.back();
-
                 }
 
                 getJSON();
