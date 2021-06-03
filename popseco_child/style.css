@@ -14,6 +14,24 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 
 /*------------DETTE ER TIL PAGE-PRODUCT-------------*/
 /*Mobil version */
+/*ændring af farve på knap under kontakt siden */
+.elementor-31 .elementor-element.elementor-element-0292656 fieldset > button {
+    background-color: #f6f0e6;
+    color: black;
+}
+
+/*fjernelse af margin på teksten på splashbillede på forsiden*/
+.elementor-244 .elementor-element.elementor-element-93529e5 > .elementor-element-populated {
+    margin: 0;
+    padding: 126px 126px 126px 126px;
+}
+
+/*ændring af farve på knap under about siden */
+.elementor-28 .elementor-element.elementor-element-7bf2068 .elementor-button {
+    background-color: #f6f0e6;
+    color: black;
+}
+
 .box_pris {
     margin-top: 1vw;
 }
@@ -26,7 +44,7 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 #filtrering {
     margin-left: auto;
     margin-right: auto;
-    width: 54%;
+    width: 56%;
 }
 
 /*Dette er kode til at give filter knapprne noget styling i form af margin og padding.*/
@@ -90,7 +108,14 @@ button:hover {
     margin-bottom: 10vw;
 }
 
+.buynow_mixbox {
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    margin-top: 1vw;
+}
+
 /*-------------DETTE ER TIL SINGLE-IS--------------*/
+/*-------------første sektion--------------*/
+
 #sektion_02 .row {
     display: grid;
     grid-template-columns: 1fr;
@@ -98,7 +123,22 @@ button:hover {
     column-gap: 10px;
 }
 
+#sektion_02 {
+    margin-top: 10vw;
+}
 
+.single-billede {
+    margin-left: 8vw;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.sektion_02_h2 {
+    margin-top: 10%;
+}
+
+/*-------------anden sektion--------------*/
 #sektion_03 .row {
     display: grid;
     grid-template-columns: 1fr;
@@ -106,41 +146,27 @@ button:hover {
     column-gap: 10px;
 }
 
+#sektion_03 {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.billede02 {
+    margin-top: 10%;
+}
+
 .is_article {
-    margin-top: 3vw;
+    margin-top: 3%;
 }
 
 .valgt {
     margin-top: 3vw;
 }
 
-#sektion_02 {
-    margin-top: 10vw;
-}
-
-.single-billede {
-    height: 40%;
-    margin-left: 8vw;
-}
-
-
-#sektion_03 {
-    margin-bottom: 10vw;
-}
-
-
-.sektion_02_h2 {
-    margin-top: -200vw;
-}
-
 .buynow {
     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
 }
 
-.buynow_mixbox {
-    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
-    margin-top: 1vw;
-}
 
 /*tablet*/
 @media (min-width:760px) {
@@ -174,20 +200,25 @@ button:hover {
     }
 
     /*-------------DETTE ER TIL SINGLE-IS--------------*/
+    /*-------------Første sektion--------------*/
     #sektion_02 .row {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
+    .sektion_02_h2 {
+        margin-top: 9vw;
+    }
 
+    .single-billede {
+        width: 57%;
+    }
+
+    /*-------------Anden sektion--------------*/
     #sektion_03 .row {
         grid-template-columns: 1fr 1fr;
     }
 
-
-    .sektion_02_h2 {
-        margin-top: 9vw;
-    }
 }
 
 /*website*/
