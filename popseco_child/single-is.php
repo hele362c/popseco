@@ -44,10 +44,10 @@ get_header();
                     <section id="sektion_03">
                         <div class="row">
                             <div class="col">
-                                <img src="" alt="" class="billede01">
+                                <img src="" alt="organic ice" class="billede01">
                             </div>
                             <div class="col">
-                                <img src="" alt="" class="billede02">
+                                <img src="" alt="organic ice" class="billede02">
                             </div>
                         </div>
                     </section>
