@@ -18,6 +18,7 @@ get_header();
         <h1 class="overskrift">THE FREEZERS</h1>
         <template>
             <article>
+                <!--               div'en med class'en indeholder det der skal vises i vores "billede med hover tekst effekt"-->
                 <div class="image">
                     <img src="" alt="" class="billede">
                     <div class="overlay">
@@ -58,27 +59,6 @@ get_header();
                         </div>
                     </div>
                 </section>
-
-                <!--
-                <section id="second_section">
-                    <div class="section_wrapper">
-                        <div class="row">
-                            <div class="col">
-                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/image01.png" alt="ikke det rigtige billede">
-                            </div>
-                            <div class="col">
-                                <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/image2.png" alt="ikke det rigtige billede ">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/wp-content/themes/popseco_child/billeder/image3.png" alt="ikke det rigtige billede">
-                        </div>
-                    </div>
-
-                </section>
--->
-
-
             </main>
 
 
@@ -87,11 +67,12 @@ get_header();
                 let isene;
                 let categories;
                 let filterIs = "alle";
-
-                const dbUrl = "http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/index.php/wp-json/wp/v2/is?per_page=100";
+                //En globale konstante variabler, der hiver fat i vores genererede data fra wp rest API
+                const dbUrl = "http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/index.php/wp-json/wp/v2/is";
 
                 const catUrl = "http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/index.php/wp-json/wp/v2/categories";
 
+                //her henter vi vores data fra wp rest api ind på sitet.
                 async function getJSON() {
                     const data = await fetch(dbUrl);
                     const catdata = await fetch(catUrl);
@@ -99,6 +80,7 @@ get_header();
                     isene = await data.json();
                     categories = await catdata.json();
 
+                    // fremviser arrayet i consolen.
                     console.log(categories);
                     visIsene();
                     opretKnapper();
@@ -123,7 +105,7 @@ get_header();
 
                     visIsene();
                 }
-
+                //her køre vi et for.each is der er - køre den de klonet template tages i gennem og til sidst henter Domen for at
                 function visIsene() {
                     console.log(isene);
                     let temp = document.querySelector("template");

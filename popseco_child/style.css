@@ -14,6 +14,55 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
 
 /*------------DETTE ER TIL PAGE-PRODUCT-------------*/
 /*Mobil version */
+
+/*Downloaded fonts til sitet*/
+/*Børd tekst*/
+@font-face {
+    font-family: 'news_cycleregular';
+    src: url('newscycle-regular-webfont.woff2') format('woff2'),
+        url('newscycle-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*overskrifter*/
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+p {
+    font-family: 'news_cycleregular'sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Myriad Pro Regular'sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*farve på knapper i menubaren*/
+.builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:focus {
+    color: #FFAC4E;
+}
+
+.builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:hover {
+    color: #FFAC4E;
+}
+
+/*Farve på tekst i kontakt formular */
+.elementor-31 .elementor-element.elementor-element-123d449 .elementor-element-populated .elementor-heading-title {
+    color: black;
+}
+
 /*ændring af farve på knap under kontakt siden */
 .elementor-31 .elementor-element.elementor-element-0292656 fieldset > button {
     background-color: #f6f0e6;
@@ -55,17 +104,25 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
     margin-bottom: 4%;
 }
 
+.filter:focus {
+    background-color: #FFAC4E;
+}
+
+
 /*Dette er en kode som ændre på farverne på filtreringsknapperne (knapper genrelt) */
 button {
     background-color: #EEDECC;
     color: black;
+    transition: all .2s ease-in-out;
 }
 
 /*Dette er en kode som giver knapperne en hover effekt som er at skifte til en anden farve */
 button:hover {
-    background-color: white;
+    background-color: #FFAC4E;
     color: black;
     border-color: #EEDECC;
+
+    transform: scale(1.2);
 }
 
 /*Dette er en kode til at lave grid opsætning på produkterne, som justeres alt efter hvilken divejses der bruges. samt centrer produkterne på midten af siden. */
@@ -137,6 +194,7 @@ button:hover {
     /*tilføjelse af skygge på billede*/
     box-shadow: 4px 4px 7px 2px;
     color: #96887180;
+    margin-bottom: 5%
 }
 
 .sektion_02_h2 {
@@ -144,25 +202,10 @@ button:hover {
 }
 
 /*-------------tredje sektion--------------*/
-/*opsætning af grid på single-view siden af tredje sektion som består af to billeder i bunden. */
-#sektion_03 .row {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 10px;
-}
-
-#sektion_03 {
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
-.billede02 {
-    margin-top: 10%;
-}
 
 .is_article {
     margin-top: 3%;
+    margin-bottom: 10%;
 }
 
 .valgt {
@@ -213,27 +256,17 @@ button:hover {
     /*-------------Anden sektion--------------*/
     /*Her opsættest grid til to colunner*/
     #sektion_02 .row {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr;
     }
 
-    .sektion_02_h2 {
-        margin-top: 9%;
-    }
-
     .single-billede {
-        width: 57%;
+        width: 76%;
     }
 
     /*-------------Tredje sektion--------------*/
     /*Her opsættest grid til to colunner*/
-    #sektion_03 .row {
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .billede02 {
-        margin-top: 0;
-    }
 
 }
 
@@ -312,11 +345,8 @@ button:hover {
     }
 
     ´
-
     /*-------------DETTE ER TIL SINGLE-IS--------------*/
-    #sektion_02 .row {
-        grid-template-columns: 1fr 2fr;
-    }
+
 }
 
 @media (min-width: 1020px) {

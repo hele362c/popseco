@@ -39,19 +39,6 @@ get_header();
                             </div>
                         </div>
                     </section>
-
-
-                    <section id="sektion_03">
-                        <div class="row">
-                            <div class="col">
-                                <img src="" alt="organic ice" class="billede01">
-                            </div>
-                            <div class="col">
-                                <img src="" alt="organic ice" class="billede02">
-                            </div>
-                        </div>
-                    </section>
-
                 </article>
             </main>
 
@@ -73,8 +60,6 @@ get_header();
                     console.log(is.billede.guid);
                     document.querySelector(".navn").textContent = is.title.rendered;
                     document.querySelector(".single-billede").src = is.billede.guid;
-                    document.querySelector(".billede01").src = is.billede01.guid;
-                    document.querySelector(".billede02").src = is.billede02.guid;
                     document.querySelector(".beskrivelse").textContent = is.beskrivelse;
                     document.querySelector(".kortbeskrivelse").textContent = is.kortbeskrivelse;
                     document.querySelector(".prissen").innerHTML = is.pris;
