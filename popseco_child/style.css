@@ -331,19 +331,19 @@ button:hover {
 
         /*sørger for at vi skjuler overlay ind til der kommer mouseover. */
         opacity: 0;
-        transition: opacity 0.25s;
-    }
-
-    /*sørger for at teksten kommer nede fra og på ved hover */
-    .overlay > * {
-        transform: translateY(20px);
-        transition: transform 0.25s;
+        transition: 0.25s;
     }
 
     /*sørger for at overlay bliver synligt når der er kommer en mouseover*/
     .overlay:hover {
         opacity: 1;
         cursor: pointer;
+    }
+
+    /*sørger for at teksten kommer nede fra og op ved hover */
+    .overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
     }
 
     /*sørger for at af animation/transitsen kommer ned fra 0 udgangspunkt*/
