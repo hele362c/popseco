@@ -350,9 +350,6 @@ button:hover {
     .overlay:hover > * {
         transform: translateY(0px);
     }
-
-    /*-------------DETTE ER TIL SINGLE-IS--------------*/
-
 }
 
 @media (min-width: 1020px) {
