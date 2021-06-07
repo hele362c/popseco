@@ -35,6 +35,8 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
     font-display: swap
 }
 
+
+.elementor a,
 .elementor-button,
 button,
 a,
@@ -42,8 +44,6 @@ p {
     font-family: 'news_cycleregular'sans-serif;
     font-weight: normal;
     font-style: normal;
-
-
 }
 
 h1,
