@@ -13,6 +13,10 @@ get_header();
 
 ?>
     <div class="<?php echo esc_attr( $container_class ); ?> single-post-container">
+
+        <head>
+            <meta name="robots" content="noindex">
+        </head>
         <section id="primary" class="content-area">
             <main id="main" class="site-main">
 

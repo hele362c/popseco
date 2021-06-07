@@ -14,13 +14,16 @@ get_header();
     <div class="<?php echo esc_attr( $container_class ); ?> single-page-container">
 
         <head>
+            <meta name="robots" content="noindex">
         </head>
         <h1 class="overskrift">THE FREEZERS</h1>
         <template>
             <article>
                 <!--               div'en med class'en indeholder det der skal vises i vores "billede med hover tekst effekt"-->
+
                 <div class="image">
                     <img src="" alt="" class="billede">
+
                     <div class="overlay">
                         <h2 class="isensnavn"></h2>
                         <h3 class="pris"></h3>
@@ -32,9 +35,11 @@ get_header();
 
         <section id="primary" class="content-area">
             <main id="main" class="site-main">
+
                 <nav id="filtrering">
                     <button class="filter" data-is="alle">all</button>
                 </nav>
+
                 <section class="iscontainer"></section>
 
                 <section id="first_section">
@@ -67,16 +72,16 @@ get_header();
                 let isene;
                 let categories;
                 let filterIs = "alle";
+
                 //En globale konstante variabler, der hiver fat i vores genererede data fra wp rest API
                 const dbUrl = "http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/index.php/wp-json/wp/v2/is";
-
                 const catUrl = "http://helenajakobsen.com/02_kea/02_semester/eksamen%20/popseco/index.php/wp-json/wp/v2/categories";
 
                 //her henter vi vores data fra wp rest api ind på sitet.
                 async function getJSON() {
                     const data = await fetch(dbUrl);
                     const catdata = await fetch(catUrl);
-
+                    //fylder vi vores data med json
                     isene = await data.json();
                     categories = await catdata.json();
 
@@ -86,6 +91,7 @@ get_header();
                     opretKnapper();
                 }
 
+                //Her oprettes knapperne til filteringen menuen via et forEach tag
                 function opretKnapper() {
                     categories.forEach(cat => {
                         document.querySelector("#filtrering").innerHTML += `<button class="filter" data-is="${cat.id}">${cat.name}</button>`
@@ -93,6 +99,9 @@ get_header();
                     addEventListenersToButtons();
                 };
 
+
+
+                //hver gang der klikkes på en knap bliver der filtret
                 function addEventListenersToButtons() {
                     document.querySelectorAll("#filtrering button").forEach(elm => {
                         elm.addEventListener("click", filtrering);
@@ -105,6 +114,10 @@ get_header();
 
                     visIsene();
                 }
+
+
+
+
                 //her køre vi et for.each is der er - køre den de klonet template tages i gennem og til sidst henter Domen for at
                 function visIsene() {
                     console.log(isene);

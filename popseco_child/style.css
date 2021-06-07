@@ -23,7 +23,7 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
         url('newscycle-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap
 }
 
 /*overskrifter*/
@@ -32,12 +32,17 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
     font-style: normal;
     font-weight: normal;
     src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+    font-display: swap
 }
 
+.elementor-button,
+button,
+a,
 p {
     font-family: 'news_cycleregular'sans-serif;
     font-weight: normal;
     font-style: normal;
+
 
 }
 
@@ -47,11 +52,13 @@ h3 {
     font-family: 'Myriad Pro Regular'sans-serif;
     font-weight: normal;
     font-style: normal;
+
 }
 
 /*farve på knapper i menubaren*/
 .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:focus {
     color: #FFAC4E;
+
 }
 
 .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:hover {
@@ -147,7 +154,7 @@ button:hover {
 
 .overskrift {
     text-align: center;
-    margin: 5% 0;
+    margin: 15% 0;
 }
 
 /*Her er firste_section opsat i et grid som i mobil version ligger under hinanden - det som kommer efter "our selection" overskriften */
