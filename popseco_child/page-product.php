@@ -16,7 +16,7 @@ get_header();
         <head>
             <meta name="robots" content="noindex">
         </head>
-        <h1 class="overskrift">THE FREEZERS</h1>
+        <h1 class="overskrift1">The freezerpops</h1>
         <template>
             <article>
                 <!--               div'en med class'en indeholder det der skal vises i vores "billede med hover tekst effekt"-->
@@ -43,7 +43,7 @@ get_header();
                 <section class="iscontainer"></section>
 
                 <section id="first_section">
-                    <h1 class="overskrift">OUR SELECTION</h1>
+                    <h1 class="overskrift2">Our selection</h1>
                     <div class="section_wrapper">
                         <div class="row">
                             <div class="col">

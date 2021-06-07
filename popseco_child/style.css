@@ -152,7 +152,12 @@ button:hover {
     text-align: center;
 }
 
-.overskrift {
+.overskrift1 {
+    text-align: center;
+    margin: 6% 0;
+}
+
+.overskrift2 {
     text-align: center;
     margin: 15% 0;
 }
